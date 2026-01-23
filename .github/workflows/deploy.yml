@@ -39,6 +39,15 @@ jobs:
           VITE_BASE_PATH: "/dev-portfolio/"
         run: npm run build:static
 
+      - name: Verify build output
+        run: |
+          echo "Build output contents:"
+          ls -la dist/public/ | head -20
+          echo ""
+          echo "Checking for index.html:"
+          test -f dist/public/index.html && echo "✓ index.html exists" || echo "✗ index.html missing"
+          test -f dist/public/404.html && echo "✓ 404.html exists" || echo "✗ 404.html missing"
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
