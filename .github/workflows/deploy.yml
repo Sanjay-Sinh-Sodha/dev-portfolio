@@ -36,7 +36,7 @@ jobs:
           # Set base path to repository name for GitHub Pages
           # Change this if your repository name is different
           # For root domain deployment, use: VITE_BASE_PATH: "/"
-          VITE_BASE_PATH: "/Portfolio-Showcase/"
+          VITE_BASE_PATH: "/dev-portfolio/"
         run: npm run build:static
 
       - name: Setup Pages
