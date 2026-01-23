@@ -36,7 +36,9 @@ export default function Home() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 text-sm font-medium mb-6 cursor-pointer hover:bg-primary/20 transition-colors"
+              onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
@@ -45,7 +47,7 @@ export default function Home() {
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold font-display leading-tight mb-6">
-              Hi, I'm <span className="text-gradient">Sanjay Sodha</span>
+              Hi, I'm <span className="text-gradient">Sanjaysinh Sodha</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
@@ -57,7 +59,7 @@ export default function Home() {
                 View Work <ArrowRight size={20} />
               </a>
               <a 
-                href="/attached_assets/Sanjay_sodha_senior_software_engg_doc_1769175326757.pdf" 
+                href="/attached_assets/sanjay_sodha_resume_1769176669845.pdf" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 rounded-full bg-secondary text-secondary-foreground font-bold hover:bg-secondary/80 transition-all flex items-center gap-2"
@@ -197,22 +199,32 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard 
-              title="UPI Payment Platform"
-              description="Architected a high-throughput UPI payment system using Kafka for event sourcing and CQRS pattern. Achieved 99.99% uptime processing massive transaction volumes."
+              title="UPI Payment Service"
+              description="Architected a high-performance UPI payment system handling multi-bank integrations and instant transactions."
+              fullDescription={`Built a high-performance UPI payment platform handling multi-bank integrations, instant transactions, and complex payment flows.\n\nKey Achievements:\n• Handled 100K+ daily events with 99.9% uptime.\n• Implemented CQRS and Saga patterns for transaction reliability.\n• Ensured compliance with RBI guidelines, PCI DSS standards, and enterprise-grade security practices.`}
               tags={["Kafka", "Node.js", "CQRS", "Redis"]}
               delay={0}
             />
             <ProjectCard 
               title="Multi-Currency Wallet"
-              description="Designed a robust multi-currency wallet system enabling seamless forex transactions. Implemented Domain-Driven Design (DDD) to manage complex business logic."
+              description="Designed a robust multi-currency wallet system enabling seamless forex transactions and FX conversions."
+              fullDescription={`Developed a scalable multi-currency wallet supporting deposits, withdrawals, and FX conversions across multiple currencies.\n\nKey Achievements:\n• Applied DDD for domain modeling and Saga for multi-step transactional consistency.\n• Built audit-ready systems compliant with RBI & InfoSec audit requirements.\n• Designed real-time balance updates and event-driven notifications.`}
               tags={["DDD", "Go", "PostgreSQL", "AWS"]}
               delay={0.1}
             />
             <ProjectCard 
               title="Bank Integrations Platform"
-              description="Built a resilient integration layer for multiple banking partners, featuring automated failover, retry mechanisms, and standardized API gateways."
+              description="Built a resilient integration layer for multiple banking partners supporting IMPS, NEFT, and account verification."
+              fullDescription={`Built multi-bank integration services supporting IMPS, NEFT, and account verification.\n\nKey Achievements:\n• Implemented robust Saga workflows for reliable cross-service transaction handling.\n• Worked closely on RBI compliance, PCI DSS standards, and InfoSec audit readiness.\n• Created comprehensive technical documentation, improving onboarding.`}
               tags={["Microservices", "NestJS", "Docker", "K8s"]}
               delay={0.2}
+            />
+            <ProjectCard 
+              title="Notification & Event System"
+              description="Created a centralized notification engine delivering transactional and promotional messages via SMS, Email, and Push."
+              fullDescription={`Created a centralized notification engine delivering transactional and promotional messages via SMS, Email, and Push, integrated with payment events.\n\nKey Achievements:\n• Architected event-driven microservices with CQRS for optimized reads and writes.\n• Ensured security and compliance adherence for sensitive user and transaction data.`}
+              tags={["Kafka", "Node.js", "CQRS", "AWS"]}
+              delay={0.3}
             />
           </div>
         </div>
