@@ -81,3 +81,10 @@
 ::-webkit-scrollbar-thumb {
   @apply bg-muted rounded-full hover:bg-muted-foreground/50 transition-colors;
 }
+
+#replit-badge-root,
+.replit-badge {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}

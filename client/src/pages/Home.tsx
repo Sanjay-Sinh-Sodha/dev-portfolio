@@ -59,6 +59,7 @@ export default function Home() {
               <a 
                 href="/attached_assets/Sanjay_sodha_senior_software_engg_doc_1769175326757.pdf" 
                 target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-4 rounded-full bg-secondary text-secondary-foreground font-bold hover:bg-secondary/80 transition-all flex items-center gap-2"
               >
                 Resume <Download size={20} />
@@ -66,13 +67,13 @@ export default function Home() {
             </div>
 
             <div className="mt-12 flex gap-6 text-muted-foreground">
-              <a href="https://www.linkedin.com/in/sanjay-sodha-8a2b53118/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/in/sanjay-sinh-sodha/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                 <Linkedin size={24} />
               </a>
               <a href="mailto:sodhasanjay14@gmail.com" className="hover:text-primary transition-colors">
                 <Mail size={24} />
               </a>
-              <a href="#" className="hover:text-primary transition-colors">
+              <a href="https://github.com/Sanjay-Sinh-Sodha" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                 <Github size={24} />
               </a>
             </div>
@@ -111,7 +112,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                With over 5 years of experience in software engineering, I specialize in building robust backend systems and distributed architectures. Currently serving as SDE 3 at <span className="text-white font-medium">Niyo Solutions</span>, I've led the development of critical financial infrastructure.
+                With over 8 years of experience in software engineering, I specialize in building robust backend systems and distributed architectures. Currently serving as SDE 3 at <span className="text-white font-medium">Niyo Solutions</span>, I've led the development of critical financial infrastructure.
               </p>
               <p>
                 My expertise lies in <span className="text-primary">Microservices, DDD, and CQRS</span> patterns. I thrive on solving complex scalability challenges, having successfully optimized transaction processing systems to handle 100k+ daily transactions with minimal latency.
@@ -123,7 +124,7 @@ export default function Home() {
             
             <div className="grid grid-cols-2 gap-4">
               <div className="glass-card p-6 rounded-2xl text-center">
-                <h3 className="text-4xl font-bold text-gradient mb-2">5+</h3>
+                <h3 className="text-4xl font-bold text-gradient mb-2">8+</h3>
                 <p className="text-sm text-muted-foreground">Years Experience</p>
               </div>
               <div className="glass-card p-6 rounded-2xl text-center">

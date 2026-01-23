@@ -23,11 +23,6 @@ export function ProjectCard({ title, description, tags, delay = 0 }: ProjectCard
       <div className="relative p-8 h-full flex flex-col z-10">
         <div className="flex justify-between items-start mb-4">
           <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">{title}</h3>
-          <div className="flex gap-2 text-muted-foreground">
-            {/* Mock links for portfolio display */}
-            <Github size={20} className="hover:text-foreground cursor-pointer transition-colors" />
-            <ExternalLink size={20} className="hover:text-foreground cursor-pointer transition-colors" />
-          </div>
         </div>
         
         <p className="text-muted-foreground mb-6 flex-grow leading-relaxed">
