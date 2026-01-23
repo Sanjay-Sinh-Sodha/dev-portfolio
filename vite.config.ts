@@ -4,6 +4,10 @@ import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 export default defineConfig({
+  // Base path for GitHub Pages deployment
+  // Set VITE_BASE_PATH environment variable to customize (e.g., "/Portfolio-Showcase/")
+  // Leave empty or "/" for root domain deployment
+  base: process.env.VITE_BASE_PATH || "/",
   plugins: [
     react(),
     runtimeErrorOverlay(),
