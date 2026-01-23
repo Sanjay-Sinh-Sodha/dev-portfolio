@@ -226,36 +226,33 @@ export default function Home() {
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            <div>
-              <SectionHeading title="Let's Connect" />
-              <p className="text-xl text-muted-foreground mb-8">
-                I'm always open to discussing new opportunities, interesting projects, or just talking tech.
-              </p>
+          <div className="max-w-2xl mx-auto">
+            <SectionHeading title="Let's Connect" align="center" />
+            <p className="text-xl text-muted-foreground mb-8 text-center">
+              I'm always open to discussing new opportunities, interesting projects, or just talking tech.
+            </p>
+            
+            <div className="space-y-6">
+              <a href="mailto:sodhasanjay14@gmail.com" className="flex items-center p-4 rounded-xl bg-card border border-white/5 hover:border-primary/50 transition-all group">
+                <div className="p-3 rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors mr-4">
+                  <Mail />
+                </div>
+                <div>
+                  <div className="text-sm text-muted-foreground">Email</div>
+                  <div className="text-lg font-medium group-hover:text-primary transition-colors">sodhasanjay14@gmail.com</div>
+                </div>
+              </a>
               
-              <div className="space-y-6">
-                <a href="mailto:sodhasanjay14@gmail.com" className="flex items-center p-4 rounded-xl bg-card border border-white/5 hover:border-primary/50 transition-all group">
-                  <div className="p-3 rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors mr-4">
-                    <Mail />
-                  </div>
-                  <div>
-                    <div className="text-sm text-muted-foreground">Email</div>
-                    <div className="text-lg font-medium group-hover:text-primary transition-colors">sodhasanjay14@gmail.com</div>
-                  </div>
-                </a>
-                
-                <a href="https://www.linkedin.com/in/sanjay-sodha-8a2b53118/" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 rounded-xl bg-card border border-white/5 hover:border-primary/50 transition-all group">
-                  <div className="p-3 rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors mr-4">
-                    <Linkedin />
-                  </div>
-                  <div>
-                    <div className="text-sm text-muted-foreground">LinkedIn</div>
-                    <div className="text-lg font-medium group-hover:text-primary transition-colors">Sanjay Sodha</div>
-                  </div>
-                </a>
-              </div>
+              <a href="https://www.linkedin.com/in/sanjay-sodha-8a2b53118/" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 rounded-xl bg-card border border-white/5 hover:border-primary/50 transition-all group">
+                <div className="p-3 rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors mr-4">
+                  <Linkedin />
+                </div>
+                <div>
+                  <div className="text-sm text-muted-foreground">LinkedIn</div>
+                  <div className="text-lg font-medium group-hover:text-primary transition-colors">Sanjay Sodha</div>
+                </div>
+              </a>
             </div>
-
           </div>
         </div>
       </section>
