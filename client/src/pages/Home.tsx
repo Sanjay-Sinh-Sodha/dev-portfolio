@@ -3,7 +3,6 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { SkillCard } from "@/components/SkillCard";
 import { ExperienceTimeline } from "@/components/ExperienceTimeline";
 import { ProjectCard } from "@/components/ProjectCard";
-import { ContactForm } from "@/components/ContactForm";
 import { motion } from "framer-motion";
 import { 
   Code2, 
@@ -11,7 +10,6 @@ import {
   Database, 
   Cloud, 
   ArrowRight, 
-  Download, 
   Linkedin, 
   Mail, 
   Github 
@@ -58,14 +56,6 @@ export default function Home() {
               <a href="#projects" className="px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold hover:bg-primary/90 transition-all flex items-center gap-2">
                 View Work <ArrowRight size={20} />
               </a>
-              <a 
-                href="/attached_assets/sanjay_sodha_resume_1769176669845.pdf" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-4 rounded-full bg-secondary text-secondary-foreground font-bold hover:bg-secondary/80 transition-all flex items-center gap-2"
-              >
-                Resume <Download size={20} />
-              </a>
             </div>
 
             <div className="mt-12 flex gap-6 text-muted-foreground">
@@ -89,7 +79,7 @@ export default function Home() {
           >
             <div className="relative z-10 w-full max-w-md mx-auto aspect-[4/5] rounded-3xl overflow-hidden border-4 border-white/5 shadow-2xl glow">
               <img 
-                src="/images/profile.jpg" 
+                src={`${import.meta.env.BASE_URL}images/profile.jpg`}
                 alt="Sanjay Sodha" 
                 className="w-full h-full object-cover"
               />
@@ -266,10 +256,6 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="glass-card p-8 rounded-3xl">
-              <h3 className="text-2xl font-bold mb-6">Send me a message</h3>
-              <ContactForm />
-            </div>
           </div>
         </div>
       </section>
