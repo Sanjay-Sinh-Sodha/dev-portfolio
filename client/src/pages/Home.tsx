@@ -243,7 +243,7 @@ export default function Home() {
                 </div>
               </a>
               
-              <a href="https://www.linkedin.com/in/sanjay-sodha-8a2b53118/" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 rounded-xl bg-card border border-white/5 hover:border-primary/50 transition-all group">
+              <a href="https://www.linkedin.com/in/sanjay-sinh-sodha/" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 rounded-xl bg-card border border-white/5 hover:border-primary/50 transition-all group">
                 <div className="p-3 rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors mr-4">
                   <Linkedin />
                 </div>
